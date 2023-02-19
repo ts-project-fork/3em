@@ -62,7 +62,7 @@ jobs:
         uses: KyleMayes/install-llvm-action@v1
         if: matrix.os == 'ubuntu-latest'
         with:
-          version: "14"
+          version: "14.0.6"
 
       - name: Set up incremental LTO and sysroot build
         if: matrix.os == 'ubuntu-latest'
